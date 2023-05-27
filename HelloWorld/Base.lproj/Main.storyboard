@@ -33,10 +33,14 @@
                                 <state key="normal" title="Show Greeting">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="greetingButtonDidTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="iSL-um-kUX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="alD-RV-uUC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
                         <constraints>
                             <constraint firstItem="AfO-bm-HNQ" firstAttribute="top" secondItem="alD-RV-uUC" secondAttribute="top" constant="145" id="BSH-qD-KY9"/>
                             <constraint firstItem="alD-RV-uUC" firstAttribute="trailing" secondItem="AfO-bm-HNQ" secondAttribute="trailing" constant="39.5" id="KgH-00-1MK"/>
@@ -45,6 +49,10 @@
                             <constraint firstItem="alD-RV-uUC" firstAttribute="bottom" secondItem="MjT-kd-okD" secondAttribute="bottom" constant="191" id="hAo-nq-w6Q"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingButton" destination="MjT-kd-okD" id="mHo-WK-kb2"/>
+                        <outlet property="greetingLable" destination="AfO-bm-HNQ" id="L4A-mr-4XP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
