@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,30 +12,37 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloWorld" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="dWl-zt-t3t">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k00-ke-rmk" userLabel="RectangleOne">
-                                <rect key="frame" x="26" y="79" width="378" height="366"/>
-                                <color key="backgroundColor" red="0.19607843137254902" green="0.11764705882352941" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUi-Ra-Res" userLabel="RectangleTwo">
-                                <rect key="frame" x="26" y="512" width="378" height="366"/>
-                                <color key="backgroundColor" red="0.30588235294117649" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AfO-bm-HNQ">
+                                <rect key="frame" x="39.666666666666657" y="204" width="314" height="51"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MjT-kd-okD">
+                                <rect key="frame" x="87" y="586" width="219" height="41"/>
+                                <color key="backgroundColor" red="0.80392156859999997" green="0.094117647060000004" blue="0.094117647060000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="219" id="rX1-N8-r1B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Show Greeting">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.066666666666666666" green="0.42745098039215684" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="alD-RV-uUC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="k00-ke-rmk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="2Xy-BZ-bU4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bUi-Ra-Res" secondAttribute="bottom" constant="20" id="5Ib-fI-QbB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bUi-Ra-Res" secondAttribute="trailing" constant="26" id="8Fj-g6-DDF"/>
-                            <constraint firstItem="bUi-Ra-Res" firstAttribute="top" secondItem="k00-ke-rmk" secondAttribute="bottom" constant="67" id="Fmo-eC-vO3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="k00-ke-rmk" secondAttribute="trailing" constant="26" id="UdJ-Ih-WSU"/>
-                            <constraint firstItem="bUi-Ra-Res" firstAttribute="height" secondItem="k00-ke-rmk" secondAttribute="height" id="a1A-eS-CPY"/>
-                            <constraint firstItem="k00-ke-rmk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="dbq-0j-Ow1"/>
-                            <constraint firstItem="bUi-Ra-Res" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="vns-51-00n"/>
+                            <constraint firstItem="AfO-bm-HNQ" firstAttribute="top" secondItem="alD-RV-uUC" secondAttribute="top" constant="145" id="BSH-qD-KY9"/>
+                            <constraint firstItem="alD-RV-uUC" firstAttribute="trailing" secondItem="AfO-bm-HNQ" secondAttribute="trailing" constant="39.5" id="KgH-00-1MK"/>
+                            <constraint firstItem="MjT-kd-okD" firstAttribute="centerX" secondItem="dWl-zt-t3t" secondAttribute="centerX" id="b9M-A8-feo"/>
+                            <constraint firstItem="AfO-bm-HNQ" firstAttribute="leading" secondItem="alD-RV-uUC" secondAttribute="leading" constant="39.5" id="f0i-cm-K2u"/>
+                            <constraint firstItem="alD-RV-uUC" firstAttribute="bottom" secondItem="MjT-kd-okD" secondAttribute="bottom" constant="191" id="hAo-nq-w6Q"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -43,4 +51,9 @@
             <point key="canvasLocation" x="75.572519083969468" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
